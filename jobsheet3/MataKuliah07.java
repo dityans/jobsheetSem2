@@ -13,10 +13,10 @@ public class MataKuliah07 {
         this.jumlahJam = jumlahJam;
     }
     void cetakInfo() {
-        System.out.print("Kode       :" + kode);
-        System.out.print("Nama       :" + nama);
-        System.out.print("Sks        :" + sks);
-        System.out.print("Jumlah Jam :" + jumlahJam);
+        System.out.println("Kode       :" + kode);
+        System.out.println("Nama       :" + nama);
+        System.out.println("Sks        :" + sks);
+        System.out.println("Jumlah Jam :" + jumlahJam);
     }
     public MataKuliah07() {
 
