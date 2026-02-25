@@ -27,10 +27,7 @@ public class MataKuliahDemo07 {
         }
         for (int i = 0; i < arrayOfMatakuliah.length; i++){
             System.out.println("Data Mata Kuliah ke-" + (i+1));
-            System.out.print("Kode       :" + arrayOfMatakuliah[i].kode);
-            System.out.print("Nama       :" + arrayOfMatakuliah[i].nama);
-            System.out.print("Sks        :" + arrayOfMatakuliah[i].sks);
-            System.out.print("Jumlah Jam :" + arrayOfMatakuliah);
+            arrayOfMatakuliah[i].cetakInfo();
         }
         sc.close();
     }

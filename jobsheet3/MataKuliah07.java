@@ -12,7 +12,13 @@ public class MataKuliah07 {
         this.sks = sks;
         this.jumlahJam = jumlahJam;
     }
-    public MataKuliah07 (){
+    void cetakInfo() {
+        System.out.print("Kode       :" + kode);
+        System.out.print("Nama       :" + nama);
+        System.out.print("Sks        :" + sks);
+        System.out.print("Jumlah Jam :" + jumlahJam);
+    }
+    public MataKuliah07() {
 
     }
     public MataKuliah07 (String kode, String nama, int sks, int jumlahJam) { 
