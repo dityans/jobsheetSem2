@@ -22,14 +22,15 @@ public class MataKuliahDemo07 {
             jumlahJam = Integer.parseInt(dummy);
             System.out.println("---------------------------------");
 
-            arrayOfMatakuliah[i] = new MataKuliah07 (kode, nama, sks, jumlahJam);
+            arrayOfMatakuliah[i] = new MataKuliah07 ();
+            arrayOfMatakuliah[i].tambahData(kode, nama, sks, jumlahJam);
         }
         for (int i = 0; i < arrayOfMatakuliah.length; i++){
             System.out.println("Data Mata Kuliah ke-" + (i+1));
             System.out.print("Kode       :" + arrayOfMatakuliah[i].kode);
             System.out.print("Nama       :" + arrayOfMatakuliah[i].nama);
             System.out.print("Sks        :" + arrayOfMatakuliah[i].sks);
-            System.out.print("Jumlah Jam :" + arrayOfMatakuliah[i].jumlahJam);
+            System.out.print("Jumlah Jam :" + arrayOfMatakuliah);
         }
         sc.close();
     }
