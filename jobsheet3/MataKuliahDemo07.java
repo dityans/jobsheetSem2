@@ -4,7 +4,11 @@ import java.util.Scanner;
 public class MataKuliahDemo07 {
     public static void main(String[] args) {
         Scanner sc = new Scanner (System. in) ;
-        MataKuliah07 [] arrayOfMatakuliah = new MataKuliah07 [3];
+        System.out.print("Masukan Jumlah Mata Kuliah: ");
+        int jumlahMK = sc.nextInt();
+        sc.nextLine();
+
+        MataKuliah07 [] arrayOfMatakuliah = new MataKuliah07 [jumlahMK];
         String kode, nama, dummy;
         int sks, jumlahJam;
 
@@ -28,6 +32,7 @@ public class MataKuliahDemo07 {
         for (int i = 0; i < arrayOfMatakuliah.length; i++){
             System.out.println("Data Mata Kuliah ke-" + (i+1));
             arrayOfMatakuliah[i].cetakInfo();
+            System.out.println("---------------------------------");
         }
         sc.close();
     }
