@@ -30,6 +30,15 @@ public class AntrianLayanan {
             data[front].tampilkanData();
         }
     }
+    public void lihatTerbelakang(){
+        if (isEmpty()){
+            System.out.println("Queue masih kosong");
+        } else {
+            System.out.println("Mahasiswa paling belakang: ");
+            System.out.println("NIM - NAMA - PRODI - KELAS");
+            data[rear].tampilkanData();
+        }
+    }
     public void tampilkanSemua(){
         if (isEmpty()){
             System.out.println("Antrian kosong");
