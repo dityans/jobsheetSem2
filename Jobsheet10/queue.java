@@ -59,7 +59,7 @@ public class queue {
                 if (rear == max -1){
                     rear = 0;
                 } else {
-                    rear ++;
+                    rear++;
                 }
             }
             data[rear] = dt;
@@ -79,7 +79,7 @@ public class queue {
                 if (front == max - 1){
                     front = 0;
                 } else {
-                    front ++;
+                    front++;
                 }
             }
         }
