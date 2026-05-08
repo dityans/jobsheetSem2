@@ -122,7 +122,7 @@ public class SingleLinkedList07 {
                 if((temp.data.nama.equalsIgnoreCase(key)) && (temp == head)){
                     this.removeFirst();
                     break;
-                } else if (temp.data.nama.equalsIgnoreCase(key)){
+                } else if (temp.next.data.nama.equalsIgnoreCase(key)){
                     temp.next = temp.next.next;
                     if (temp.next == null){
                         tail = temp;
@@ -138,7 +138,7 @@ public class SingleLinkedList07 {
             removeFirst();
         } else {
             NodeMahasiswa07 temp = head;
-            for (int i=0; i < index; i++){
+            for (int i=0; i < index - 1; i++){
                 temp = temp.next;
             }
             temp.next = temp.next.next;
