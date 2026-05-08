@@ -29,5 +29,18 @@ public class SLLMain07 {
         Mahasiswa07 mhsBaru = new Mahasiswa07(nim, nama, kelas, ipk);
         sll.addLast(mhsBaru);
         sll.print();
+        sc.close();
+
+        System.out.println("data index 1: ");
+        sll.getData(1);
+
+        System.out.println("data mahasiswa an Bimon berada pada index: " + sll.indexOf("bimon"));
+        System.out.println();
+
+        sll.removeFirst();
+        sll.removeLast();
+        sll.print();
+        sll.removeAt(0);
+        sll.print();
     }
 }
