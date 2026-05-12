@@ -35,13 +35,18 @@ public class DoubleLinkedListMain {
                     list.insertAfter(keyNim, dataBaru);
                     break;
                 case 4:
+                    list.removeFirst();
                     break;
                 case 5:
+                    list.removeLast();
                     break;
                 case 6:
                     list.print();
                     break;
+                case 0:
+                    System.out.println("Program selesai.");
                 default:
+                    System.out.println("Menu tidak valid");
                     break;
             }
         } while (pilihan != 0);
