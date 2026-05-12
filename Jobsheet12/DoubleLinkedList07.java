@@ -79,6 +79,8 @@ public class DoubleLinkedList07 {
             System.out.println("Linked list kosong.");
             return;
         }
+        System.out.println("Data dihapus:");
+        head.data.tampil();
         if (head == tail){
             head = tail = null;
         } else {
@@ -91,6 +93,8 @@ public class DoubleLinkedList07 {
             System.out.println("Linked list kosong.");
             return;
         }
+        System.out.println("Data dihapus:");
+        tail.data.tampil();
         if (head == tail){
             head = tail = null;
         } else {

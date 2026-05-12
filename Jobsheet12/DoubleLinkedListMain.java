@@ -45,6 +45,7 @@ public class DoubleLinkedListMain {
                     break;
                 case 0:
                     System.out.println("Program selesai.");
+                    break;
                 default:
                     System.out.println("Menu tidak valid");
                     break;
