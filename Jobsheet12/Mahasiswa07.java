@@ -14,8 +14,8 @@ public class Mahasiswa07 {
         System.out.println(
             "NIM   : " + nim +
             "\nNama  : " + nama +
-            "\nKelas :" + kelas +
-            "\nIPK   :" + ipk
+            "\nKelas : " + kelas +
+            "\nIPK   : " + ipk
         );
         System.out.println();
     }

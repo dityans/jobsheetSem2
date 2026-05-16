@@ -9,10 +9,16 @@ public class DoubleLinkedListMain {
             System.out.println("\n===== MENU DOUBLE LINKED LIST ======");
             System.out.println("1. Tambah data di awal");
             System.out.println("2. Tambah data di akhir");
-            System.out.println("3. Sisipkan data di tengah (setelaha NIM)");
+            System.out.println("3. Sisipkan data di tengah (setelah NIM)");
             System.out.println("4. Hapus data di awal");
             System.out.println("5. Hapus data di akhir");
             System.out.println("6. Tampilkan data");
+            System.out.println("7. Sisipkan data di index");
+            System.out.println("8. Hapus data setelah NIM");
+            System.out.println("9. Hapus data di index");
+            System.out.println("10. Tampil data terdepan");
+            System.out.println("11. Tampil data terbelakang");
+            System.out.println("12. Tampil data di index");
             System.out.println("0. Keluar");
             System.out.print("Pilih menu: ");
             pilihan = sc.nextInt();
@@ -42,6 +48,37 @@ public class DoubleLinkedListMain {
                     break;
                 case 6:
                     list.print();
+                    break;
+                case 7:
+                    System.out.print("Masukan index yang dicari: ");
+                    int keyIndex = sc.nextInt();
+                    sc.nextLine();
+                    System.out.println("Masukan data baru: ");
+                    Mahasiswa07 dataIndex = inputMahasiswa(sc);
+                    list.addAt(keyIndex, dataIndex);
+                    break;
+                case 8:
+                    System.out.print("Masukan NIM yang dicari: ");
+                    keyNim = sc.nextLine();
+                    list.removeAfterNIM(keyNim);
+                    break;
+                case 9:
+                    System.out.print("Masukan index yang dicari: ");
+                    keyIndex = sc.nextInt();
+                    sc.nextLine();
+                    list.removeAtIndex(keyIndex);
+                    break;
+                case 10:
+                    list.getFirst();
+                    break;
+                case 11:
+                    list.getLast();
+                    break;
+                case 12:
+                    System.out.print("Masukan index yang dicari: ");
+                    keyIndex = sc.nextInt();
+                    sc.nextLine();
+                    list.getIndex(keyIndex);
                     break;
                 case 0:
                     System.out.println("Program selesai.");
