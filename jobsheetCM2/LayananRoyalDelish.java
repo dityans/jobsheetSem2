@@ -25,6 +25,9 @@ public class LayananRoyalDelish {
         Scanner sc = new Scanner(System.in);
         DLLPembeli listPembeli = new DLLPembeli();
         DLLPesanan listPesanan = new DLLPesanan();
+        listPembeli.tambahAntrian(new Pembeli("Ainra", "08224500000"));
+        listPembeli.tambahAntrian(new Pembeli("Danra", "08224511111"));
+        listPembeli.tambahAntrian(new Pembeli("Sanra", "08224522222"));
         int pilihan = 0;
         do{
             System.out.println("\n==== SISTEM ANTRIAN ROYAL DELISH =====");

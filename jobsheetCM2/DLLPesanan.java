@@ -43,7 +43,7 @@ public class DLLPesanan {
         }
     }
     public void sortNamaPesanan() {
-        if (head == null) {
+        if (isEmpty()) {
             return;
         }
 
